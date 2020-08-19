@@ -1,0 +1,14 @@
+server:
+  #当前Config服务的端口号配置
+  port: 65010
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/mcj010/config
+          search-paths: configtest
+          username: 329392494@qq.com
+          password: jt5GKhNvbrNTkJq
