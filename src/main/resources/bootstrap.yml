@@ -10,5 +10,5 @@ spring:
         git:
           uri: https://github.com/mcj010/config
           search-paths: configtest
-          username: 329392494@qq.com
-          password: jt5GKhNvbrNTkJq
+          username: 
+          password:
