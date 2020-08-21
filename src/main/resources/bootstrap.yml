@@ -10,5 +10,9 @@ spring:
         git:
           uri: https://github.com/mcj010/config
           search-paths: configtest
-          username: 
-          password:
+          username: u
+          password: p
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eurekaserver1:30001/eureka/
