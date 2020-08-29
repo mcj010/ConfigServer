@@ -4,15 +4,36 @@ server:
 spring:
   application:
     name: configserver
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
   cloud:
     config:
       server:
         git:
           uri: https://github.com/mcj010/config
           search-paths: configtest
-          username: u
-          password: p
+
+    bus:
+      enabled: true
+      trace:
+        enabled: true
+#  security:
+#    user:
+#      name: root
+#      password: s3cr3t
 eureka:
   client:
     service-url:
       defaultZone: http://eurekaserver1:30001/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+          
+          
+          
